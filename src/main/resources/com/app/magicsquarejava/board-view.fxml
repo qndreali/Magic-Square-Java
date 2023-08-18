@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane
+        fx:id="boardPane"
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="800.0"
+        prefWidth="450.0"
+        style="-fx-background-color: #FFE5EC;"
+        xmlns="http://javafx.com/javafx/20.0.1"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.app.magicsquarejava.BoardController">
+
+    <AnchorPane
+            fx:id="logoPane"
+            prefHeight="100.0"
+            prefWidth="450.0">
+        <ImageView
+                fitHeight="92.0"
+                fitWidth="92.0"
+                layoutX="179.0"
+                layoutY="4.0"
+                pickOnBounds="true"
+                preserveRatio="true">
+            <Image url="@logo.png" />
+        </ImageView>
+    </AnchorPane>
+
+    <Button
+            fx:id="backButton"
+            layoutX="203.0"
+            layoutY="743.0"
+            mnemonicParsing="false"
+            onMouseClicked="#onBackButtonClick"
+            prefHeight="40.0"
+            prefWidth="40.0"
+            style="-fx-background-color: #FFE5EC; -fx-background-radius: 50; -fx-border-color: #FFC2D1; -fx-border-radius: 50; -fx-border-width: 3;"
+            text="&lt;"
+            textFill="#ffc2d1">
+        <font>
+            <Font
+                    name="Arial Bold"
+                    size="20.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+
+   <AnchorPane
+           layoutY="145.0"
+           prefHeight="400.0"
+           prefWidth="450.0">
+
+       <Button
+               fx:id="a1"
+               layoutX="35.0"
+               layoutY="10.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="a2"
+               layoutX="165.0"
+               layoutY="10.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="a3"
+               layoutX="295.0"
+               layoutY="10.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="b1"
+               layoutX="35.0"
+               layoutY="140.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button fx:id="b2"
+               layoutX="165.0"
+               layoutY="140.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="b3"
+               layoutX="295.0"
+               layoutY="140.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="c1"
+               layoutX="35.0"
+               layoutY="270.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="c2"
+               layoutX="165.0"
+               layoutY="270.0"
+               mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+
+       <Button
+               fx:id="c3"
+               layoutX="295.0"
+               layoutY="270.0" mnemonicParsing="false"
+               onMouseClicked="#onPosClick"
+               prefHeight="120.0"
+               prefWidth="120.0"
+               style="-fx-background-color: #FFC2D1; -fx-background-radius: 25;"
+               textFill="#E69AA9">
+           <font>
+               <Font
+                       name="Arial Bold Italic"
+                       size="60.0" />
+           </font>
+       </Button>
+   </AnchorPane>
+
+   <Text
+           fx:id="turnText"
+           fill="#e69aa9"
+           layoutX="-2.0"
+           layoutY="131.0"
+           strokeType="OUTSIDE"
+           strokeWidth="0.0"
+           text="'S Turn"
+           textAlignment="CENTER"
+           wrappingWidth="450.0">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="25.0" />
+      </font>
+   </Text>
+
+   <Button
+           fx:id="peg1"
+           onMouseClicked="#onPegClick"
+           layoutX="50.0"
+           layoutY="561.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="1"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg2"
+           onMouseClicked="#onPegClick"
+           layoutX="120.0"
+           layoutY="561.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="2"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg3"
+           onMouseClicked="#onPegClick"
+           layoutX="190.0"
+           layoutY="561.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="3"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg4"
+           onMouseClicked="#onPegClick"
+           layoutX="260.0"
+           layoutY="561.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="4"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg5"
+           onMouseClicked="#onPegClick"
+           layoutX="330.0"
+           layoutY="561.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="5"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg6"
+           onMouseClicked="#onPegClick"
+           layoutX="87.0"
+           layoutY="633.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="6"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg7"
+           onMouseClicked="#onPegClick"
+           layoutX="157.0"
+           layoutY="633.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="7"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg8"
+           onMouseClicked="#onPegClick"
+           layoutX="227.0"
+           layoutY="633.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="8"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+
+   <Button
+           fx:id="peg9"
+           onMouseClicked="#onPegClick"
+           layoutX="297.0"
+           layoutY="633.0"
+           mnemonicParsing="false"
+           prefHeight="50.0"
+           prefWidth="50.0"
+           style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;"
+           text="9"
+           textFill="#e69aa9">
+      <font>
+         <Font
+                 name="Arial Bold Italic"
+                 size="35.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>
